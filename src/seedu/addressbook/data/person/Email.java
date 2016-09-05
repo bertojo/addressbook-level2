@@ -54,8 +54,11 @@ public class Email {
         return value.hashCode();
     }
 
-
     public boolean isPrivate() {
         return isPrivate;
+    }
+    
+    public String getPrintableString() {
+        return "Email: " + this.value;
     }
 }

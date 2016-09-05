@@ -55,4 +55,8 @@ public class Address {
     public boolean isPrivate() {
         return isPrivate;
     }
+    
+    public String getPrintableString() {
+        return "Address: " + this.value;
+    }
 }
