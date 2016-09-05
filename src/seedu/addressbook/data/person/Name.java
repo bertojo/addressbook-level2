@@ -60,5 +60,12 @@ public class Name {
     public int hashCode() {
         return fullName.hashCode();
     }
+    
+    public boolean isSimilar(Name other) {
+        String original = this.fullName.toLowerCase().trim();
+        String nameToCompare = other.toString().toLowerCase().trim();
+        
+        return original.equals(nameToCompare);
+    }
 
 }
